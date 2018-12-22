@@ -1,0 +1,43 @@
+!function(oWindow, widgetSettings) {
+	var oDocument = oWindow.document, sWidgets = widgetSettings.widgets;
+	
+	if (sWidgets[0]) {
+		oWindow.siteWidgets ? oWindow.siteWidgets.start(widgetSettings) : !function() {
+			var status, oScript, firstScript;
+			oScript = oDocument.createElement('script'),
+			status = false,
+			firstScript = oDocument.getElementsByTagName('script')[0],
+			oScript.type = 'text/javascript',
+			oScript.async = true,
+			oScript.src = widgetSettings.settings.library,
+			oScript.onload = oScript.onreadystatechange = function() {
+				var state = this.readyState;
+				status || state && state !== 'complete' && state !== 'loaded' || (status = true, oWindow.siteWidgets.start(widgetSettings));
+			},
+			firstScript.parentNode.insertBefore(oScript, firstScript);
+		}();
+		window.fbAsyncInit = function() {FB.init({appId: "589890624510367", version: "v2.5", status: false, xfbml: false, frictionlessRequests: false, cookie: false, hideFlashCallback: null});};
+(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; 
+js.src = "//connect.facebook.net/en_US/all.js"; fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));
+	}
+}(window, {
+	widgets: [{"id":62,"name":"XVIDA COUPON","sort_order":40,"layout":"rightFlyby","settings":{"vertical":false},"template":"image","type":"promo","display":{"start":{"exit":true,"scroll":80},"stop":[],"schedule":{"weekdays":[0,1,2,3,4,5,6]}},"data":{"description":"Enter \"iDropUshop\" coupon code at checkout and save 20% of your entire order. ","label":"Check this out!","textVertically":false,"url":"https:\/\/www.xvida.com\/products\/magnetic-wireless-charging-case-for-iphone-x?utm_source=idropnews.com&utm_medium=referral&utm_campaign=xvidareview1coupon&utm_term=xvidareview1coupon","newWindow":true,"buttonText":"See the Store","title":"SAVE 20% ON THE ENTIRE XVIDA ORDER"},"style":{"layout":"rightFlyby","theme":false,"backColor":"#FFFFFF","headerTextColor":"#000000","textColor":"#808080","buttonColor":"#000000","buttonTextColor":"#FFFFFF","secondaryColor":"#000000","secondaryTextColor":"#FFFFFF","barBackColor":"#FFFFFF","barTextColor":"#808080","barButtonColor":"#000000","barButtonTextColor":"#FFFFFF","baseColor":"#FFFFFF","font":"Arial, Helvetica, sans-serif","mobileVerticalOffset":40,"animation":"fadeInRight","image":{"src":"\/\/addmee.net:443\/accounts\/1656C6306F0B7BF\/images\/IMG_5AF0F2AB46438663118723.jpeg","backColor":null,"valign":"top","padding":true,"position":"right"}},"tracking":null,"targeting":{"ab":100,"url":[{"include":true,"value":"\/reviews\/best-wireless-charging-pad-iphone\/68180\/"}],"percent":100}},{"id":63,"name":"XVIDA COUPON - AW","sort_order":40,"layout":"rightFlyby","settings":{"vertical":false},"template":"image","type":"promo","display":{"start":{"exit":true,"scroll":80},"stop":[],"schedule":{"weekdays":[0,1,2,3,4,5,6]}},"data":{"description":"Enter \"iDropUshop\" coupon code at checkout and save 20% of your entire order. ","label":"Check this out!","textVertically":false,"url":"https:\/\/www.xvida.com\/products\/magnetic-wireless-charging-case-for-iphone-x?utm_source=idropnews.com&utm_medium=referral&utm_campaign=1xvidareview1coupon&utm_term=1xvidareview1coupon","newWindow":true,"buttonText":"See the Store","title":"SAVE 20% ON THE ENTIRE XVIDA ORDER"},"style":{"layout":"rightFlyby","theme":false,"backColor":"#FFFFFF","headerTextColor":"#000000","textColor":"#808080","buttonColor":"#000000","buttonTextColor":"#FFFFFF","secondaryColor":"#000000","secondaryTextColor":"#FFFFFF","barBackColor":"#FFFFFF","barTextColor":"#808080","barButtonColor":"#000000","barButtonTextColor":"#FFFFFF","baseColor":"#FFFFFF","font":"Arial, Helvetica, sans-serif","mobileVerticalOffset":40,"animation":"fadeInRight","image":{"src":"\/\/addmee.net:443\/accounts\/1656C6306F0B7BF\/images\/IMG_5AF0F2AB46438663118723.jpeg","backColor":null,"valign":"top","padding":true,"position":"right"}},"tracking":null,"targeting":{"ab":100,"url":[{"include":true,"value":"\/social\/might-best-wireless-charging-solution-iphone\/71757\/"}],"percent":100}},{"id":64,"name":"XVIDA COUPON - FB","sort_order":40,"layout":"rightFlyby","settings":{"vertical":false},"template":"image","type":"promo","display":{"start":{"exit":true,"scroll":80},"stop":[],"schedule":{"weekdays":[0,1,2,3,4,5,6]}},"data":{"description":"Enter \"iDropUshop\" coupon code at checkout and save 20% of your entire order. ","label":"Check this out!","textVertically":false,"url":"https:\/\/www.xvida.com\/products\/magnetic-wireless-charging-case-for-iphone-x?utm_source=idropnews.com&utm_medium=referral&utm_campaign=0xvidareview1coupon&utm_term=0xvidareview1coupon","newWindow":true,"buttonText":"See the Store","title":"SAVE 20% ON THE ENTIRE XVIDA ORDER"},"style":{"layout":"rightFlyby","theme":false,"backColor":"#FFFFFF","headerTextColor":"#000000","textColor":"#808080","buttonColor":"#000000","buttonTextColor":"#FFFFFF","secondaryColor":"#000000","secondaryTextColor":"#FFFFFF","barBackColor":"#FFFFFF","barTextColor":"#808080","barButtonColor":"#000000","barButtonTextColor":"#FFFFFF","baseColor":"#FFFFFF","font":"Arial, Helvetica, sans-serif","mobileVerticalOffset":40,"animation":"fadeInRight","image":{"src":"\/\/addmee.net:443\/accounts\/1656C6306F0B7BF\/images\/IMG_5AF0F2AB46438663118723.jpeg","backColor":null,"valign":"top","padding":true,"position":"right"}},"tracking":null,"targeting":{"ab":100,"url":[{"include":true,"value":"\/social\/might-best-wireless-charging-solution-iphone-2\/71772\/"}],"percent":100}}],
+	runtime: {
+		trackUrl: "https://api.addmee.net/api/v1/stat",
+		apiUrl: "https://api.addmee.net/api/v1/api",
+		shareByEmailUrl: "https://api.addmee.net/api/v1/share-by-email?u={url}&t={title}&d={description}&logo={logo}",
+		doTrack: true,
+		responsive: {
+			enabled: true,
+			breakpoint: 640
+		},
+		submitUrl: "https://api.addmee.net/api/v1/submit",
+		logoUrl: "https://api.addmee.net?utm_source={site}&utm_medium=referral&utm_term={layout}&utm_content={type}&utm_campaign=Widgets Logo",
+		removeLogo: true,
+		sessionLength: 20,
+		enableGoogleAnalytics: true
+	},
+	settings: {
+		library: "https://api.addmee.net/library/2.0"
+	}
+});

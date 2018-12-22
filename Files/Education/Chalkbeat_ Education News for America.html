@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://www.chalkbeat.org/ -->
+<html lang="en-US" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="./Chalkbeat_ Education News for America_files/ee02659fe9"></script><script type="text/javascript" src="./Chalkbeat_ Education News for America_files/pd.js.download"></script><script src="./Chalkbeat_ Education News for America_files/nr-1071.min.js.download"></script><script src="./Chalkbeat_ Education News for America_files/f.txt"></script><script src="./Chalkbeat_ Education News for America_files/pubads_impl_rendering_231.js.download"></script><script type="text/javascript" async="" src="./Chalkbeat_ Education News for America_files/linkid.js.download"></script><script async="" src="./Chalkbeat_ Education News for America_files/analytics.js.download"></script><script id="facebook-jssdk" src="./Chalkbeat_ Education News for America_files/sdk.js.download"></script><script src="./Chalkbeat_ Education News for America_files/1513443465647869" async=""></script><script async="" src="./Chalkbeat_ Education News for America_files/fbevents.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+	<title>Chalkbeat: Education News for America</title>
+	
+<!-- This site is optimized with the Yoast SEO Premium plugin v7.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Chalkbeat is a nonprofit news organization committed to covering one of America’s most important stories: the effort to improve schools for all children, especially those who have historically lacked access to a quality education.">
+<link rel="canonical" href="https://www.chalkbeat.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chalkbeat: Education News for America">
+<meta property="og:description" content="Chalkbeat is a nonprofit news organization committed to covering one of America’s most important stories: the effort to improve schools for all children, especially those who have historically lacked access to a quality education.">
+<meta property="og:url" content="https://www.chalkbeat.org/">
+<meta property="og:site_name" content="Chalkbeat">
+<meta property="og:image" content="https://www.chalkbeat.org/wp-content/uploads/2016/04/home.png">
+<meta property="og:image:secure_url" content="https://www.chalkbeat.org/wp-content/uploads/2016/04/home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="616">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Chalkbeat is a nonprofit news organization committed to covering one of America’s most important stories: the effort to improve schools for all children, especially those who have historically lacked access to a quality education.">
+<meta name="twitter:title" content="Chalkbeat: Education News for America">
+<meta name="twitter:image" content="https://www.chalkbeat.org/wp-content/uploads/2016/04/home.png">
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.chalkbeat.org\/","name":"Chalkbeat","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.chalkbeat.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.chalkbeat.org\/","sameAs":["https:\/\/www.instagram.com\/Chalkbeatorg","https:\/\/www.linkedin.com\/company\/chalkbeat\/","https:\/\/www.youtube.com\/channel\/UCGuhR9I9ZN6VYalm3P7eMfA"],"@id":"#organization","name":"Chalkbeat","logo":"https:\/\/www.chalkbeat.org\/wp-content\/uploads\/2017\/11\/chalkbeatlogo.png"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/">
+<link rel="dns-prefetch" href="https://www.chalkbeat.org/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<meta property="fb:pages" content="45830815529">
+<meta property="fb:pages" content="551301675026056">
+<meta property="fb:pages" content="625907340786335">
+<meta property="fb:pages" content="82599518413">
+<meta property="fb:pages" content="353374664814502">
+<meta property="fb:pages" content="179861732220822">
+<meta property="fb:pages" content="200155530540779">
+<meta property="fb:pages" content="542316826125535">
+<link rel="stylesheet" id="chalkbeat-css-css" href="./Chalkbeat_ Education News for America_files/style.css" type="text/css" media="all">
+<script type="text/javascript" src="./Chalkbeat_ Education News for America_files/jquery.min.js.download"></script>
+<link rel="https://api.w.org/" href="https://www.chalkbeat.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.chalkbeat.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.chalkbeat.org/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.7">
+<link rel="shortlink" href="https://www.chalkbeat.org/">
+<link rel="alternate" type="application/json+oembed" href="https://www.chalkbeat.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chalkbeat.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.chalkbeat.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.chalkbeat.org%2F&amp;format=xml">
+
+  	<script src="./Chalkbeat_ Education News for America_files/gpt.js.download"></script><script id="gpt-impl-0.2537124100251926" src="./Chalkbeat_ Education News for America_files/pubads_impl_231.js.download"></script><link rel="preload" href="./Chalkbeat_ Education News for America_files/f(1).txt" as="script"><script src="./Chalkbeat_ Education News for America_files/f(1).txt"></script><script>processGoogleTokenSync({"newToken":"FBS"},5);</script>
+
+  	<script type="text/javascript">
+
+  		var googletag = googletag || {};
+  		googletag.cmd = googletag.cmd || [];
+
+      var google_ads = {};
+
+  		googletag.cmd.push(function() {
+
+        google_ads['key-value-leaderboard'] = googletag.defineSlot('/22210871/key-value-leaderboard', [728, 90], 'div-gpt-ad-1517501730066-3')
+          .setTargeting('Page', ['Home'])
+          .setTargeting('Bureau', ['us'])
+          .addService(googletag.pubads());
+
+        google_ads['key-value-leadboard-mobile'] = googletag.defineSlot('/22210871/key-value-leaderboard-mobile', [320, 50], 'div-gpt-ad-1518710815303-0')
+          .setTargeting('Page', ['Home'])
+          .setTargeting('Bureau', ['us'])
+          .addService(googletag.pubads());
+
+        google_ads['key-value-rectangle1'] = googletag.defineSlot('/22210871/key-value-rectangle1', [300, 250], 'div-gpt-ad-1517501730066-2')
+          .setTargeting('Page', ['Home'])
+          .setTargeting('Bureau', ['us'])
+          .addService(googletag.pubads());
+
+        google_ads['key-value-rectangle2'] = googletag.defineSlot('/22210871/key-value-rectangle2', [300, 250], 'div-gpt-ad-1517501730066-1')
+          .setTargeting('Page', ['Home'])
+          .setTargeting('Bureau', ['us'])
+          .addService(googletag.pubads());
+
+    		googletag.pubads().disableInitialLoad();
+    		googletag.enableServices();
+
+  		});
+
+      jQuery(document).ready(function(){
+
+        googletag.cmd.push(function() {
+          googletag.pubads().refresh([google_ads['key-value-leaderboard'], google_ads['key-value-leaderboard-mobile'], google_ads['key-value-rectangle1'], google_ads['key-value-rectangle2']]);
+        });
+
+      });
+
+		</script>
+
+	
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '1513443465647869');
+	fbq('track', "PageView");</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1513443465647869&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<script type="text/javascript">
+  /* <![CDATA[ */
+  var cb_chalkbeat = {"ajax_url":"https://www.chalkbeat.org/wp-admin/admin-ajax.php"};
+  /* ]]> */
+  </script>
+
+	<link href="./Chalkbeat_ Education News for America_files/css" rel="stylesheet">
+	<link href="./Chalkbeat_ Education News for America_files/css(1)" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<link href="https://www.chalkbeat.org/wp-content/themes/chalkbeat2/static/images/chalkbeat-favicon.ico" rel="icon" type="image/x-icon">
+<link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-29/html/container.html"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v1{animation-duration:250ms;animation-name:fb_bounce_in_v1}.fb_customer_chat_bounce_out_v1{animation-duration:250ms;animation-name:fb_bounce_out_v1}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v1{0%{opacity:0;transform:scale(.8, .8);transform-origin:bottom right}80%{opacity:.8;transform:scale(1.03, 1.03)}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v1{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><script type="text/javascript" src="./Chalkbeat_ Education News for America_files/analytics"></script></head>
+<body class="home page-template page-template-page-templates page-template-template-fronts page-template-page-templatestemplate-fronts-php page page-id-76841 bureau-us">
+
+	
+        <script>
+      		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      		ga('create', 'UA-45028002-10', 'auto', 'chalkbeatRollup');
+      		ga('require', 'displayfeatures');
+      		ga('require', 'linkid', 'linkid.js');ga('chalkbeatRollup.set', 'contentGroup1', 'Section Front');ga('chalkbeatRollup.send', 'pageview');</script>
+	<div id="wrapper" class="hfeed">
+
+		<header class="site-header">
+
+			
+			<div class="container main-header-container">
+
+				<div class="header-top">
+
+					<nav class="nav-promos tablet">
+						<a href="https://go.pardot.com/l/342281/2018-05-30/g27h9" class="button-red">Newsletters</a>
+					</nav>
+
+					<div class="branding desktop">
+
+						<h1 class="header-logo site-title"><a href="https://www.chalkbeat.org/">Chalkbeat</a></h1>
+
+						<h2 class="branding-description desktop">Education news. In context.</h2>
+
+					</div> <!-- /.branding -->
+
+					<div class="branding mobile">
+
+						<h1 class="header-logo site-title"><a href="https://www.chalkbeat.org/">Chalkbeat</a></h1>
+
+						<nav class="nav-promos mobile">
+							<a href="https://go.pardot.com/l/342281/2018-05-30/g27h9" class="button-red">Newsletters</a>
+						</nav>
+
+					</div> <!-- /.branding -->
+
+					
+						<div class="current-bureau">
+							<div class="bureau bureau-with-icon bureau-us">National</div>						</div> <!-- /.div -->
+
+					
+					<div class="ad-leaderboard desktop">
+						<div id="js-leaderboard-ad"><div id="div-gpt-ad-1517501730066-3" class="ad-wrapper" data-google-query-id="CNS1o-eDntwCFcsB0wodcNcGhQ"><div id="google_ads_iframe_/22210871/key-value-leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22210871/key-value-leaderboard_0" title="3rd party ad content" name="google_ads_iframe_/22210871/key-value-leaderboard_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" kwframeid="1" src="./Chalkbeat_ Education News for America_files/saved_resource.html"></iframe></div></div></div>
+					</div>
+
+				</div>
+
+				<div class="navbar">
+
+					
+<nav class="action-menu">
+
+	<ul>
+		<li class="facebook"><a href="https://facebook.com/chalkbeat" class="icon" target="_blank" alt="Facebook">Facebook</a></li>
+		<li class="twitter"><a href="https://twitter.com/chalkbeat" class="icon" target="_blank" alt="Twitter">Twitter</a></li>
+		<li class="search-holder"><a href="https://www.chalkbeat.org/?s" class="icon" alt="Search">Search</a></li>
+
+		<!-- <li class="search-holder">
+			<button class="search-toggle icon">Search</button>
+
+			<form method="GET" action="https://www.chalkbeat.org/" class="search-form hidden">
+				<input type="text" class="search-input" name="s" id="s">
+				<input type="submit" class="search-button" value="Search Chalkbeat">
+			</form>
+
+		</li> -->
+	</ul>
+
+</nav> <!-- /.action-menu -->
+
+					<nav class="header-top-menu"><ul id="menu-new-nav" class="menu"><li id="nav-menu-item-148481" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-has-children"><a href="https://www.chalkbeat.org/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 1 | Locations&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 1 | Locations&#39;);">Locations</a>
+<ul class="sub-menu">
+	<li id="nav-menu-item-150533" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/chicago/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 2 | Chicago&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 2 | Chicago&#39;);">Chicago</a></li>
+	<li id="nav-menu-item-148486" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/co/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 3 | Colorado&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 3 | Colorado&#39;);">Colorado</a></li>
+	<li id="nav-menu-item-148487" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/detroit/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 4 | Detroit&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 4 | Detroit&#39;);">Detroit</a></li>
+	<li id="nav-menu-item-148488" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/in/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 5 | Indiana&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 5 | Indiana&#39;);">Indiana</a></li>
+	<li id="nav-menu-item-150532" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/newark/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 6 | Newark&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 6 | Newark&#39;);">Newark</a></li>
+	<li id="nav-menu-item-148489" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/ny/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 7 | New York&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 7 | New York&#39;);">New York</a></li>
+	<li id="nav-menu-item-148490" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/tn/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 8 | Tennessee&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 8 | Tennessee&#39;);">Tennessee</a></li>
+	<li id="nav-menu-item-148491" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://chalkbeat.org/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 9 | National&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 9 | National&#39;);">National</a></li>
+</ul>
+</li>
+<li id="nav-menu-item-148482" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-has-children"><a href="https://www.chalkbeat.org/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 10 | Topics&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 10 | Topics&#39;);">Topics</a>
+<ul class="sub-menu">
+	<li id="nav-menu-item-148517" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/are-children-learning/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 11 | Are Children Learning&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 11 | Are Children Learning&#39;);">Are Children Learning</a></li>
+	<li id="nav-menu-item-148519" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/early-childhood/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 12 | Early Childhood&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 12 | Early Childhood&#39;);">Early Childhood</a></li>
+	<li id="nav-menu-item-148520" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/future-of-schools/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 13 | Future of Schools&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 13 | Future of Schools&#39;);">Future of Schools</a></li>
+	<li id="nav-menu-item-148521" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/future-of-teaching/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 14 | Future of Teaching&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 14 | Future of Teaching&#39;);">Future of Teaching</a></li>
+	<li id="nav-menu-item-148522" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/future-of-work/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 15 | Future of Work&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 15 | Future of Work&#39;);">Future of Work</a></li>
+	<li id="nav-menu-item-148524" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/in-the-classroom/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 16 | In the Classroom&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 16 | In the Classroom&#39;);">In the Classroom</a></li>
+	<li id="nav-menu-item-148525" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/movers-shakers/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 17 | Movers and Shakers&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 17 | Movers and Shakers&#39;);">Movers and Shakers</a></li>
+	<li id="nav-menu-item-148527" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/school-closings/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 18 | School Closings&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 18 | School Closings&#39;);">School Closings</a></li>
+	<li id="nav-menu-item-148528" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/school-finance/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 19 | School Finance&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 19 | School Finance&#39;);">School Finance</a></li>
+	<li id="nav-menu-item-148529" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/sorting-the-students/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 20 | Sorting the Students&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 20 | Sorting the Students&#39;);">Sorting the Students</a></li>
+	<li id="nav-menu-item-148530" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/other-60-percent/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 21 | The Other 60 Percent&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 21 | The Other 60 Percent&#39;);">The Other 60 Percent</a></li>
+	<li id="nav-menu-item-148532" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://www.chalkbeat.org/topics/who-is-in-charge/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 22 | Who Is in Charge&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 22 | Who Is in Charge&#39;);">Who Is in Charge</a></li>
+</ul>
+</li>
+<li id="nav-menu-item-148484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://www.chalkbeat.org/contact/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 23 | Connect&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 23 | Connect&#39;);">Connect</a>
+<ul class="sub-menu">
+	<li id="nav-menu-item-148502" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/contact/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 24 | Contact&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 24 | Contact&#39;);">Contact</a></li>
+	<li id="nav-menu-item-148501" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/our-boards/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 25 | Our Boards&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 25 | Our Boards&#39;);">Our Boards</a></li>
+	<li id="nav-menu-item-148515" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://jobs.chalkbeat.org/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 26 | Find a Job&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 26 | Find a Job&#39;);">Find a Job</a></li>
+	<li id="nav-menu-item-148504" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/events/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 27 | Local Events&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 27 | Local Events&#39;);">Local Events</a></li>
+	<li id="nav-menu-item-148505" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/republishing/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 28 | Republish Our Stories&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 28 | Republish Our Stories&#39;);">Republish Our Stories</a></li>
+	<li id="nav-menu-item-148506" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/become-a-chalkbeat-sponsor/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 29 | Sponsorships&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 29 | Sponsorships&#39;);">Sponsorships</a></li>
+	<li id="nav-menu-item-148507" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/support/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 30 | Support Us&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 30 | Support Us&#39;);">Support Us</a></li>
+</ul>
+</li>
+<li id="nav-menu-item-148485" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-has-children"><a href="https://www.chalkbeat.org/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 31 | About Us&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 31 | About Us&#39;);">About Us</a>
+<ul class="sub-menu">
+	<li id="nav-menu-item-148509" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/about/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 32 | About Chalkbeat&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 32 | About Chalkbeat&#39;);">About Chalkbeat</a></li>
+	<li id="nav-menu-item-148508" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/ethics/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 33 | Code of Ethics&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 33 | Code of Ethics&#39;);">Code of Ethics</a></li>
+	<li id="nav-menu-item-148510" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/staff/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 34 | Our Team&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 34 | Our Team&#39;);">Our Team</a></li>
+	<li id="nav-menu-item-148511" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/documents/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 35 | Reports&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 35 | Reports&#39;);">Reports</a></li>
+	<li id="nav-menu-item-148512" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/mori/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 36 | MORI&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 36 | MORI&#39;);">MORI</a></li>
+	<li id="nav-menu-item-148513" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/supporters/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 37 | Our Supporters&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 37 | Our Supporters&#39;);">Our Supporters</a></li>
+	<li id="nav-menu-item-161465" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/about-news-partners/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 38 | Our news partners&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 38 | Our news partners&#39;);">Our news partners</a></li>
+	<li id="nav-menu-item-148514" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/careers/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 39 | Work with Us&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 39 | Work with Us&#39;);">Work with Us</a></li>
+	<li id="nav-menu-item-166539" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/awards/" class="menu-link sub-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 40 | Awards&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Header Top Menu | 40 | Awards&#39;);">Awards</a></li>
+</ul>
+</li>
+</ul></nav>
+					<nav class="nav-promos desktop">
+						<a href="https://go.pardot.com/l/342281/2018-05-30/g27h9" class="button-red">Newsletters</a>
+						<a href="https://www.chalkbeat.org/make-a-donation" class="button-blue">Donate</a>
+					</nav>
+
+				</div>
+
+			</div> <!-- /.main-header-container -->
+
+						
+		</header>
+
+		<div id="js-mobile-leaderboard-ad" class="mobile" style="margin:0 auto 15px; width:320px;"><div id="js-leaderboard-ad"><div id="div-gpt-ad-1518710815303-0" class="ad-wrapper"><script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1518710815303-0'); });</script></div></div></div>
+
+<div class="wide-container page-header-bg desktop  minimized " style="background-image: url(&#39;https://www.chalkbeat.org/wp-content/uploads/2016/04/home-1200x226-c-default.png&#39;);">
+
+	<div class="container title-holder">
+
+		
+			<h2 class="section-title">Education news. <strong>In context.</strong></h2>
+
+			<p>Everyone has an opinion about how to fix education, especially for the poorest children. As a nonprofit news organization, we at Chalkbeat offer you solid facts about what is actually happening and what it means, from local reporters who really understand. <br>No bias, no spin, no jargon.</p>
+
+			<a href="https://www.chalkbeat.org/about" class="button">Learn More</a>
+
+		
+	</div> <!-- /.container -->
+
+	
+</div> <!-- /.page-header-bg -->
+
+<div class="container">
+
+	<div class="row row-margin-bottom">
+
+		<div class="col-lg-8 top-featured">
+
+      <div class="article-block-background">
+	<a href="https://www.chalkbeat.org/posts/newark/2018/07/11/superintendent-leon-secures-leadership-team-navigates-evolving-relationship-with-board/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 1 | superintendent-leon-secures-leadership-team-navigates-evolving-relationship-with-board&#39;);">
+
+    						<img src="./Chalkbeat_ Education News for America_files/Roger-Leon-Board-690x470-c-default.jpg">
+					
+    <img src="./Chalkbeat_ Education News for America_files/img-overlay.png" class="overlay">
+
+		<h1>
+
+      
+        <div class="category-flag header-fold blue left">
+  				<div class="text-wrapper">
+  					<h4 class="text">first steps</h4>
+  				</div>
+  			</div>
+
+      
+
+						Newark superintendent secures leadership team, navigates evolving relationship with board
+			
+              <div class="bureau bureau-with-icon bureau-newark">Newark</div>
+      		</h1>
+	</a>
+
+  <div class="comments-time-byline">
+  		<span class="timestamp-timediff">
+								2 days ago
+							</span>
+  </div>
+
+</div> <!-- /.article-block-background -->
+
+		</div> <!-- /.col-lg-8 -->
+
+		
+		<div class="col-lg-4 col-xs-12 fronts-top">
+
+      <div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/in/2018/07/12/the-future-of-education-reform-in-indiana-is-pushing-career-readiness-to-the-forefront/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 2 | the-future-of-education-reform-in-indiana-is-pushing-career-readiness-to-the-forefront&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/04/IMG_6991-330x220-c-default.jpg" src="./Chalkbeat_ Education News for America_files/IMG_6991-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+              <div class="bureau bureau-with-icon bureau-in">Indiana</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										1 day ago
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/in/2018/07/12/the-future-of-education-reform-in-indiana-is-pushing-career-readiness-to-the-forefront/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 2 | the-future-of-education-reform-in-indiana-is-pushing-career-readiness-to-the-forefront&#39;);">The future of education reform in Indiana is pushing career-readiness to the forefront</a></h3>
+
+		
+	</div>
+
+</div>
+
+		</div> <!-- /.col-lg-8 -->
+
+	</div> <!-- /.row -->
+
+	<div clas="row">
+
+		<div class="col-lg-4 mobile-full-width">
+
+			
+			<div id="div-gpt-ad-1517501730066-2" class="ad-wrapper" data-google-query-id="CLXto-eDntwCFUoh0wod_mEC8g"><div id="google_ads_iframe_/22210871/key-value-rectangle1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22210871/key-value-rectangle1_0" title="3rd party ad content" name="google_ads_iframe_/22210871/key-value-rectangle1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" kwframeid="2" src="./Chalkbeat_ Education News for America_files/saved_resource(1).html"></iframe></div></div>
+
+			<br style="clear:both;">
+
+			<div class="widget-best-of-chalkbeat max-width">
+
+				
+<div class="section-header header-nofold right no-icon best-of-chalkbeat">
+	<div class="text-wrapper">
+		<h4 class="text"><span class="icon-star-white"></span> Featured Jobs</h4>
+	</div>
+</div>
+
+<div class="item-widget-inside">
+
+  <ul class="title-list">
+
+    
+    	<li>
+    		<a href="https://jobs.chalkbeat.org/jobs/director-of-media-relations-communications-and-college-relations-director/">Lehman College, CUNY:  Director of Media Relations (Communications and College Relations Director)</a>
+    	</li>
+
+    
+    	<li>
+    		<a href="https://jobs.chalkbeat.org/jobs/teach-in-memphis/">Teach901:  Teach in Memphis</a>
+    	</li>
+
+    
+    	<li>
+    		<a href="https://jobs.chalkbeat.org/jobs/5th-grade-teacher-general-or-special-education/">Bronx Community Charter School:  5th grade teacher, general or special education</a>
+    	</li>
+
+    
+    	<li>
+    		<a href="https://jobs.chalkbeat.org/jobs/recruiter-3/">Denver Fellows:  Educator- Denver Fellow</a>
+    	</li>
+
+    
+    	<li>
+    		<a href="https://jobs.chalkbeat.org/jobs/middle-school-math-and-ela-teachers-2/">Bronx Community Charter School:  Middle school intervention math and ELA teachers</a>
+    	</li>
+
+    
+  </ul>
+
+  <a class="more-link" href="http://jobs.chalkbeat.org/">Find your next education job at jobs.chalkbeat.org</a>
+</div>
+
+
+			</div>
+
+		</div> <!-- /.col-lg-4 -->
+
+		<div class="col-lg-8 mobile-full-width">
+
+        
+          <div class="row">
+          <div class="col-lg-6">
+
+            <div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/detroit/2018/07/12/detroit-math-teacher-tends-a-greenhouse-welcomes-parents-into-her-classroom/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 3 | detroit-math-teacher-tends-a-greenhouse-welcomes-parents-into-her-classroom&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/07/IMG_6382-330x220-c-default.jpg" src="./Chalkbeat_ Education News for America_files/IMG_6382-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">How I Teach</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-detroit">Detroit</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										1 day ago
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/detroit/2018/07/12/detroit-math-teacher-tends-a-greenhouse-welcomes-parents-into-her-classroom/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 3 | detroit-math-teacher-tends-a-greenhouse-welcomes-parents-into-her-classroom&#39;);">Detroit math teacher tends a greenhouse, welcomes parents into her classroom</a></h3>
+
+		
+	</div>
+
+</div>
+
+          </div>
+
+          
+        
+          
+          <div class="col-lg-6">
+
+            <div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/detroit/2018/07/11/suspended-detroit-students-will-get-a-second-chance-as-district-opens-new-alternative-school/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 4 | suspended-detroit-students-will-get-a-second-chance-as-district-opens-new-alternative-school&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/07/GettyImages-879746282-1-330x220-c-default.jpg" src="./Chalkbeat_ Education News for America_files/GettyImages-879746282-1-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">Staying in school</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-detroit">Detroit</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										2 days ago
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/detroit/2018/07/11/suspended-detroit-students-will-get-a-second-chance-as-district-opens-new-alternative-school/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 4 | suspended-detroit-students-will-get-a-second-chance-as-district-opens-new-alternative-school&#39;);">Detroit students ‘making mistakes’ will get a second chance as district opens new alternative school</a></h3>
+
+		
+	</div>
+
+</div>
+
+          </div>
+
+          </div>
+        
+          <div class="row">
+          <div class="col-lg-6">
+
+            <div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/in/2018/07/11/to-bring-down-potential-tax-hikes-chamber-proposes-slashing-indianapolis-public-schools-budget/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 5 | to-bring-down-potential-tax-hikes-chamber-proposes-slashing-indianapolis-public-schools-budget&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2015/04/GenericBoyGirlWalkHalls-330x220-c-default.jpg" src="./Chalkbeat_ Education News for America_files/GenericBoyGirlWalkHalls-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+              <div class="bureau bureau-with-icon bureau-in">Indiana</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										3 days ago
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/in/2018/07/11/to-bring-down-potential-tax-hikes-chamber-proposes-slashing-indianapolis-public-schools-budget/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Featured Position | 5 | to-bring-down-potential-tax-hikes-chamber-proposes-slashing-indianapolis-public-schools-budget&#39;);">To bring down potential tax hikes, chamber proposes slashing Indianapolis Public Schools budget</a></h3>
+
+		
+	</div>
+
+</div>
+
+          </div>
+
+          
+        
+				<div class="col-lg-6 full-width widget-best-of-chalkbeat">
+					<div class="section-header header-nofold right no-icon">
+	<div class="text-wrapper">
+		<h4 class="text"><span class="icon-star-white"></span> Best of Chalkbeat</h4>
+	</div>
+</div>
+<div class="item-widget-inside">
+
+  
+		<article class="chalkbeat-hot from-self">
+
+              <div class="bureau bureau-with-icon bureau-us">National</div>
+      
+			<h3><a href="https://www.chalkbeat.org/posts/us/2018/06/15/in-female-dominated-education-field-women-still-lag-behind-in-pay-according-to-two-new-studies/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Best of Chalkbeat&#39;, &#39;click&#39;, &#39;Best of Chalkbeat Module | 1 | in-female-dominated-education-field-women-still-lag-behind-in-pay-according-to-two-new-studies&#39; );">In female-dominated education field, women still lag behind in pay, according to two new studies</a></h3>
+
+		</article>
+
+  
+		<article class="chalkbeat-hot from-self">
+
+              <div class="bureau bureau-with-icon bureau-us">National</div>
+      
+			<h3><a href="https://www.chalkbeat.org/posts/us/2018/05/23/what-does-the-future-of-work-mean-for-schools-big-claims-leave-educators-with-more-questions-than-answers/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Best of Chalkbeat&#39;, &#39;click&#39;, &#39;Best of Chalkbeat Module | 2 | what-does-the-future-of-work-mean-for-schools-big-claims-leave-educators-with-more-questions-than-answers&#39; );">What does the ‘future of work’ mean for schools? Big claims leave educators with more questions than answers</a></h3>
+
+		</article>
+
+  
+		<article class="chalkbeat-hot from-self">
+
+              <div class="bureau bureau-with-icon bureau-us">National</div>
+      
+			<h3><a href="https://www.chalkbeat.org/posts/us/2018/05/03/introducing-chalkbeats-new-how-i-teach-newsletter/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Best of Chalkbeat&#39;, &#39;click&#39;, &#39;Best of Chalkbeat Module | 3 | introducing-chalkbeats-new-how-i-teach-newsletter&#39; );">Chalkbeat’s newest newsletter is made for teachers. Sign up here.</a></h3>
+
+		</article>
+
+  
+</div>
+				</div> <!-- /.col-lg-6 -->
+
+			</div> <!-- /.row -->
+
+		</div> <!-- /.col-lg-8 -->
+
+	</div> <!-- /.row -->
+
+</div> <!-- /.container -->
+
+
+	<div class="wide-container concrete-bg articles-section">
+
+		<div class="container">
+
+			<h2 class="section-title">
+				<a href="https://www.chalkbeat.org/series/first-person/">First Person</a>
+			</h2>
+
+			<div class="row">
+
+				
+					<div class="col-lg-4">
+
+						<div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/chicago/2018/07/12/im-a-principal-who-thinks-personalized-learning-shouldnt-be-a-debate/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 1 | im-a-principal-who-thinks-personalized-learning-shouldnt-be-a-debate&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/07/Lisa-Epstein-330x220-c-default.jpeg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">First Person</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-chicago">Chicago</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										1 day ago
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/chicago/2018/07/12/im-a-principal-who-thinks-personalized-learning-shouldnt-be-a-debate/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 1 | im-a-principal-who-thinks-personalized-learning-shouldnt-be-a-debate&#39;);">I’m a principal who thinks personalized learning shouldn’t be a debate.</a></h3>
+
+		
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/chicago/2018/07/12/im-a-principal-who-thinks-personalized-learning-shouldnt-be-a-debate/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 1 | im-a-principal-who-thinks-personalized-learning-shouldnt-be-a-debate&#39;);">This is the first in what we hope will be a tradition of thoughtful opinion pieces—of all viewpoints—published by Chalkbeat Chicago. Have an idea? Send…</a>
+		</div>
+
+		
+	</div>
+
+</div>
+
+					</div> <!-- /.col-lg-4 -->
+
+				
+					<div class="col-lg-4">
+
+						<div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/ny/2018/06/22/ive-spent-years-studying-the-link-between-shsat-scores-and-student-success-the-test-doesnt-tell-you-as-much-as-you-might-think/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 2 | ive-spent-years-studying-the-link-between-shsat-scores-and-student-success-the-test-doesnt-tell-you-as-much-as-you-might-think&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/06/GettyImages-117628137-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">First Person</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-ny">New York</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										June 22, 2018
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/ny/2018/06/22/ive-spent-years-studying-the-link-between-shsat-scores-and-student-success-the-test-doesnt-tell-you-as-much-as-you-might-think/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 2 | ive-spent-years-studying-the-link-between-shsat-scores-and-student-success-the-test-doesnt-tell-you-as-much-as-you-might-think&#39;);">I’ve spent years studying the link between SHSAT scores and student success. The test doesn’t tell you as much as you might think.</a></h3>
+
+		
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/ny/2018/06/22/ive-spent-years-studying-the-link-between-shsat-scores-and-student-success-the-test-doesnt-tell-you-as-much-as-you-might-think/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 2 | ive-spent-years-studying-the-link-between-shsat-scores-and-student-success-the-test-doesnt-tell-you-as-much-as-you-might-think&#39;);">A standardized test does not predict as well as past school performance, indicating that Mayor Bill de Blasio seems headed in the right direction.</a>
+		</div>
+
+		
+	</div>
+
+</div>
+
+					</div> <!-- /.col-lg-4 -->
+
+				
+					<div class="col-lg-4">
+
+						<div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/newark/2018/06/20/with-roots-in-cuba-and-spain-newark-student-came-to-america-to-shine-bright/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 3 | with-roots-in-cuba-and-spain-newark-student-came-to-america-to-shine-bright&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/06/Layla-Gonzalez_edit-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">First Person</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-newark">Newark</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										June 20, 2018
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/newark/2018/06/20/with-roots-in-cuba-and-spain-newark-student-came-to-america-to-shine-bright/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 3 | with-roots-in-cuba-and-spain-newark-student-came-to-america-to-shine-bright&#39;);">With roots in Cuba and Spain, Newark student came to America to ‘shine bright’</a></h3>
+
+		
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/newark/2018/06/20/with-roots-in-cuba-and-spain-newark-student-came-to-america-to-shine-bright/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Top Feed | First Person | 3 | with-roots-in-cuba-and-spain-newark-student-came-to-america-to-shine-bright&#39;);">Layla Gonzalez is a fourth-grader at Hawkins Street School.</a>
+		</div>
+
+		
+	</div>
+
+</div>
+
+					</div> <!-- /.col-lg-4 -->
+
+				
+			</div> <!-- /.row -->
+
+		</div> <!-- /.container -->
+
+	</div><!-- /.wide-container -->
+
+
+<div class="wide-container articles-section">
+
+	<h2 class="section-title centered">More Recent Articles</h2>
+
+	<div class="container">
+
+		<div class="row row-margin-bottom">
+
+			<div class="col-lg-8 col-lg-push-4">
+
+				<div class="recent-posts-feed">
+
+					
+						<div class="article-block-side row">
+
+	
+	<div class="col-xs-4 col-lg-6">
+
+		<div class="thumb-holder">
+
+			<a href="https://www.chalkbeat.org/posts/tn/2018/07/13/sharing-their-hearts-why-these-parents-became-advocates-for-memphis-students/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 1 | sharing-their-hearts-why-these-parents-became-advocates-for-memphis-students&#39;);">
+				<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/07/IMG_4799-e1531521545824-340x250-c-default.jpg">
+			</a>
+
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">Powerful Parents</h4>
+  				</div>
+  			</div>
+
+      
+		</div> <!-- /.thumb-holder -->
+
+	</div>
+
+	
+	<div class=" col-xs-8 col-lg-6 thumb-title ">
+
+          <div class="bureau bureau-with-icon bureau-tn">Tennessee</div>
+        <div class="comments-time-byline">
+      <span class="timestamp-timediff">
+								7 hours ago
+							</span>
+    </div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/tn/2018/07/13/sharing-their-hearts-why-these-parents-became-advocates-for-memphis-students/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 1 | sharing-their-hearts-why-these-parents-became-advocates-for-memphis-students&#39;);">‘Sharing their hearts’: Why these parents became advocates for Memphis students</a></h3>
+
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/tn/2018/07/13/sharing-their-hearts-why-these-parents-became-advocates-for-memphis-students/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 1 | sharing-their-hearts-why-these-parents-became-advocates-for-memphis-students&#39;);">While their children are out of school for the summer, a local parent group is using this time to hit the books.</a>
+		</div>
+
+	</div> <!-- /.col-sm-6 -->
+
+</div>
+
+					
+						<div class="article-block-side row">
+
+	
+	<div class="col-xs-4 col-lg-6">
+
+		<div class="thumb-holder">
+
+			<a href="https://www.chalkbeat.org/posts/co/2018/07/13/why-this-standalone-denver-charter-school-is-considering-joining-forces-with-a-network/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 2 | why-this-standalone-denver-charter-school-is-considering-joining-forces-with-a-network&#39;);">
+				<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/07/roots-elementary-student-reading-340x250-c-default.jpg">
+			</a>
+
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">Looking to the future</h4>
+  				</div>
+  			</div>
+
+      
+		</div> <!-- /.thumb-holder -->
+
+	</div>
+
+	
+	<div class=" col-xs-8 col-lg-6 thumb-title ">
+
+          <div class="bureau bureau-with-icon bureau-co">Colorado</div>
+        <div class="comments-time-byline">
+      <span class="timestamp-timediff">
+								10 hours ago
+							</span>
+    </div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/co/2018/07/13/why-this-standalone-denver-charter-school-is-considering-joining-forces-with-a-network/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 2 | why-this-standalone-denver-charter-school-is-considering-joining-forces-with-a-network&#39;);">Why this standalone Denver charter school is considering joining forces with a network</a></h3>
+
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/co/2018/07/13/why-this-standalone-denver-charter-school-is-considering-joining-forces-with-a-network/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 2 | why-this-standalone-denver-charter-school-is-considering-joining-forces-with-a-network&#39;);">Leaders from both Roots Elementary and Rocky Mountain Prep see a potential merger as mutually beneficial.</a>
+		</div>
+
+	</div> <!-- /.col-sm-6 -->
+
+</div>
+
+					
+						<div class="article-block-side row">
+
+	
+	<div class="col-xs-4 col-lg-6">
+
+		<div class="thumb-holder">
+
+			<a href="https://www.chalkbeat.org/posts/tn/2018/07/13/tennessees-career-readiness-program-expands-beyond-high-school/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 3 | tennessees-career-readiness-program-expands-beyond-high-school&#39;);">
+				<img data-src="https://www.chalkbeat.org/wp-content/uploads/2015/09/McQueen-at-Drive-to-55-summit-340x250-c-default.jpg">
+			</a>
+
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">Pathways</h4>
+  				</div>
+  			</div>
+
+      
+		</div> <!-- /.thumb-holder -->
+
+	</div>
+
+	
+	<div class=" col-xs-8 col-lg-6 thumb-title ">
+
+          <div class="bureau bureau-with-icon bureau-tn">Tennessee</div>
+        <div class="comments-time-byline">
+      <span class="timestamp-timediff">
+								19 hours ago
+							</span>
+    </div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/tn/2018/07/13/tennessees-career-readiness-program-expands-beyond-high-school/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 3 | tennessees-career-readiness-program-expands-beyond-high-school&#39;);">Tennessee’s career readiness program expands beyond high school</a></h3>
+
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/tn/2018/07/13/tennessees-career-readiness-program-expands-beyond-high-school/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 3 | tennessees-career-readiness-program-expands-beyond-high-school&#39;);">Six years after the state launched Pathways Tennessee, a career readiness effort for high school students, the program is growing and rebranding as…</a>
+		</div>
+
+	</div> <!-- /.col-sm-6 -->
+
+</div>
+
+					
+						<div class="article-block-side row">
+
+	
+	<div class="col-xs-4 col-lg-6">
+
+		<div class="thumb-holder">
+
+			<a href="https://www.chalkbeat.org/posts/tn/2018/07/12/early-voting-begins-friday-heres-where-your-candidates-stand-on-education/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 4 | early-voting-begins-friday-heres-where-your-candidates-stand-on-education&#39;);">
+				<img data-src="https://www.chalkbeat.org/wp-content/uploads/2016/06/5139407571_176d0729e6_o-340x250-c-default.jpg">
+			</a>
+
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">Tennessee Votes 2018</h4>
+  				</div>
+  			</div>
+
+      
+		</div> <!-- /.thumb-holder -->
+
+	</div>
+
+	
+	<div class=" col-xs-8 col-lg-6 thumb-title ">
+
+          <div class="bureau bureau-with-icon bureau-tn">Tennessee</div>
+        <div class="comments-time-byline">
+      <span class="timestamp-timediff">
+								1 day ago
+							</span>
+    </div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/tn/2018/07/12/early-voting-begins-friday-heres-where-your-candidates-stand-on-education/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 4 | early-voting-begins-friday-heres-where-your-candidates-stand-on-education&#39;);">Early voting begins Friday in Tennessee. Here’s where your candidates stand on education.</a></h3>
+
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/tn/2018/07/12/early-voting-begins-friday-heres-where-your-candidates-stand-on-education/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;More Recent Articles | 4 | early-voting-begins-friday-heres-where-your-candidates-stand-on-education&#39;);">Chalkbeat asked candidates in four critical races about their positions on public education.</a>
+		</div>
+
+	</div> <!-- /.col-sm-6 -->
+
+</div>
+
+					
+				</div> <!-- /.recent-posts-feed -->
+
+				<button class="load-more-recent button-concrete" data-offset="0" data-bureaus="25346,3630,19713,1824,17856,6171,25347,3" data-exclude="170985,171093,171082,170996,170946,171059,168890,168668,171170,171159,171108,171077,170675,170212,170218" data-per_page="10" data-ga_page="National Front">Show More Stories</button>
+
+			</div> <!-- /.col-lg-8 -->
+
+			<div class="col-lg-4 col-lg-pull-8">
+
+				<div class="fronts-ad">
+
+					<div id="div-gpt-ad-1517501730066-1" class="ad-wrapper" data-google-query-id="CN-5pueDntwCFeYi0wodGVkLhg"><div id="google_ads_iframe_/22210871/key-value-rectangle2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/22210871/key-value-rectangle2_0" title="3rd party ad content" name="google_ads_iframe_/22210871/key-value-rectangle2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" kwframeid="3" src="./Chalkbeat_ Education News for America_files/saved_resource(2).html"></iframe></div></div>
+
+									</div>
+
+				<div style="clear:both;"></div>
+
+				<div class="widget-best-of-chalkbeat">
+									</div>
+
+							</div> <!-- /.col-lg-4 -->
+
+		</div> <!-- /.row -->
+
+	</div> <!-- /.container -->
+
+</div> <!-- /.wide-container -->
+
+
+	<div class="wide-container concrete-bg articles-section">
+
+		<div class="container">
+
+			<h2 class="section-title">
+				<a href="https://www.chalkbeat.org/series/how-i-teach/">How I Teach</a>
+			</h2>
+
+			<div class="row">
+
+				
+					<div class="col-lg-4">
+
+						<div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/in/2018/07/09/how-this-indianapolis-teacher-uses-his-own-learning-disability-to-understand-his-students/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 1 | how-this-indianapolis-teacher-uses-his-own-learning-disability-to-understand-his-students&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2015/12/Chalkbeat-12-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">How I Teach</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-in">Indiana</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										July 9, 2018
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/in/2018/07/09/how-this-indianapolis-teacher-uses-his-own-learning-disability-to-understand-his-students/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 1 | how-this-indianapolis-teacher-uses-his-own-learning-disability-to-understand-his-students&#39;);">How this Indianapolis teacher uses his own learning disability to understand his students</a></h3>
+
+		
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/in/2018/07/09/how-this-indianapolis-teacher-uses-his-own-learning-disability-to-understand-his-students/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 1 | how-this-indianapolis-teacher-uses-his-own-learning-disability-to-understand-his-students&#39;);">This Indianapolis teacher talks about how his diagnosis with dyslexia at a young age helped him become the educator he always aspired to be.</a>
+		</div>
+
+		
+	</div>
+
+</div>
+
+					</div> <!-- /.col-lg-4 -->
+
+				
+					<div class="col-lg-4">
+
+						<div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/detroit/2018/07/05/you-wont-find-michelle-shorter-in-the-teachers-lounge/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 2 | you-wont-find-michelle-shorter-in-the-teachers-lounge&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/07/IMG_2823-4-e1530887855230-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">How I Teach</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-detroit">Detroit</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										July 5, 2018
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/detroit/2018/07/05/you-wont-find-michelle-shorter-in-the-teachers-lounge/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 2 | you-wont-find-michelle-shorter-in-the-teachers-lounge&#39;);">You won’t find Michelle Shorter in the teachers lounge</a></h3>
+
+		
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/detroit/2018/07/05/you-wont-find-michelle-shorter-in-the-teachers-lounge/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 2 | you-wont-find-michelle-shorter-in-the-teachers-lounge&#39;);">How do teachers captivate their students? Welcome to How I Teach, a feature in which we ask great Detroit educators how they approach…</a>
+		</div>
+
+		
+	</div>
+
+</div>
+
+					</div> <!-- /.col-lg-4 -->
+
+				
+					<div class="col-lg-4">
+
+						<div class="article-block-below">
+
+	<a href="https://www.chalkbeat.org/posts/ny/2018/07/05/having-once-found-science-dull-as-a-student-this-new-york-city-teacher-now-strives-for-a-more-engaging-approach/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 3 | having-once-found-science-dull-as-a-student-this-new-york-city-teacher-now-strives-for-a-more-engaging-approach&#39;);">
+
+    
+						<img data-src="https://www.chalkbeat.org/wp-content/uploads/2018/05/GettyImages-565888317-330x220-c-default.jpg">
+			
+		</a>
+    
+    <div class="thumb-title thumb">
+      
+        <div class="category-flag header-fold blue left desktop">
+  				<div class="text-wrapper">
+  					<h4 class="text">How I Teach</h4>
+  				</div>
+  			</div>
+
+      
+              <div class="bureau bureau-with-icon bureau-ny">New York</div>
+      
+      <div class="comments-time-byline">
+		    <span class="timestamp-timediff">
+										July 5, 2018
+									</span>
+			</div>
+
+		<h3><a href="https://www.chalkbeat.org/posts/ny/2018/07/05/having-once-found-science-dull-as-a-student-this-new-york-city-teacher-now-strives-for-a-more-engaging-approach/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 3 | having-once-found-science-dull-as-a-student-this-new-york-city-teacher-now-strives-for-a-more-engaging-approach&#39;);">Having once found science dull as a student, this New York City teacher now strives for a more engaging approach</a></h3>
+
+		
+		<div class="excerpt">
+			<a href="https://www.chalkbeat.org/posts/ny/2018/07/05/having-once-found-science-dull-as-a-student-this-new-york-city-teacher-now-strives-for-a-more-engaging-approach/" onclick="ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;National Front&#39;, &#39;click&#39;, &#39;Bottom Feed | How I Teach | 3 | having-once-found-science-dull-as-a-student-this-new-york-city-teacher-now-strives-for-a-more-engaging-approach&#39;);">“I remember making myself a promise to show my former teachers what they could be doing to captivate their students one day."</a>
+		</div>
+
+		
+	</div>
+
+</div>
+
+					</div> <!-- /.col-lg-4 -->
+
+				
+			</div> <!-- /.row -->
+
+		</div> <!-- /.container -->
+
+	</div><!-- /.wide-container -->
+
+
+
+
+		<div class="wide-container rise-and-shine-container">
+
+				
+                      
+<form class="email-signup rise-and-shine-form clearfix container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+
+      <div class="email-logo">
+
+        <div class="svg-wrapper">
+          <svg viewBox="0 0 1024 768" aria-labelledby="egsi-ant-mail-title" id="si-ant-mail" width="100%" height="100%"><title id="egsi-ant-mail-title">email icon</title><path d="M1024 59q-2-25-20.5-42T960 0H64Q38 0 19 19T0 64v640q0 26 19 45t45 19h896q26 0 45-19t19-45V59zm-112 5L512 367 130 64h782zm48 640H64V93l428 339q19 16 39 1l429-325v596z"></path></svg>
+        </div>
+
+        <h4>Education news.<br>In your inbox.</h4>
+
+      </div>
+
+    </div>
+
+    <div class="col-lg-4 rs-field">
+
+      <label>
+        <p>Email Address:</p>
+        <input class="fat-input" type="email" name="email" placeholder="Email Address">
+      </label>
+
+    </div>
+
+    <div class="col-lg-3 rs-field">
+
+      <label>
+        <p>Select Edition:</p>
+        <div class="select-holder">
+          <select name="list">
+            <optgroup label="Location Newsletters">
+                                                <option value="7823">Chicago</option>
+                                                                <option value="691">Colorado</option>
+                                                                <option value="625">Detroit</option>
+                                                                <option value="693">Indiana</option>
+                                                                <option value="3425" selected="selected">National</option>
+                                                                <option value="1173">New York</option>
+                                                                <option value="7825">Newark</option>
+                                                                <option value="951">Tennessee</option>
+                                          </optgroup>
+                        <optgroup label="Featured Newsletters">
+                                                                                                                                          <option value="15456">How I Teach</option>
+                                                                        </optgroup>
+                      </select>
+        </div>
+      </label>
+
+      <input type="hidden" name="campaign" value="14036">
+
+    </div>
+
+    <div class="col-lg-2 rs-field">
+
+      <button class="button-red" type="submit">Subscribe</button>
+
+    </div>
+
+  </div>
+
+  <div class="response"></div>
+
+</form>
+		
+	</div> <!-- /.wide-container -->
+	
+	<footer class="site-footer">
+
+		<div class="container main-footer-container">
+
+			<div class="branding">
+
+				<h1 class="header-logo site-title"><a href="https://www.chalkbeat.org/">Chalkbeat</a></h1>
+
+				<h2 class="branding-description">Education news. In context.</h2>
+
+			</div> <!-- /.branding -->
+
+			<nav class="footer-main-menu"><ul id="menu-expanded-pages-for-footer" class="menu"><li id="nav-menu-item-77610" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 1 | About&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 1 | About&#39;);">About</a></li>
+<li id="nav-menu-item-77614" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/ethics/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 2 | Ethics&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 2 | Ethics&#39;);">Ethics</a></li>
+<li id="nav-menu-item-77609" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/contact/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 3 | Contact&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 3 | Contact&#39;);">Contact</a></li>
+<li id="nav-menu-item-77617" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.chalkbeat.org/events" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 4 | Events&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 4 | Events&#39;);">Events</a></li>
+<li id="nav-menu-item-77619" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://jobs.chalkbeat.org/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 5 | Jobs&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 5 | Jobs&#39;);">Jobs</a></li>
+<li id="nav-menu-item-83042" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/become-a-chalkbeat-sponsor/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 6 | Become A Sponsor&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 6 | Become A Sponsor&#39;);">Become A Sponsor</a></li>
+<li id="nav-menu-item-77612" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/about/republishing/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 7 | Republish Our Stories&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 7 | Republish Our Stories&#39;);">Republish Our Stories</a></li>
+<li id="nav-menu-item-85511" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/rss-feeds/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 8 | RSS&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 8 | RSS&#39;);">RSS</a></li>
+<li id="nav-menu-item-77608" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/careers/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 9 | Work With Us&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 9 | Work With Us&#39;);">Work With Us</a></li>
+<li id="nav-menu-item-77604" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/support/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 10 | Support Us&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Main Menu | 10 | Support Us&#39;);">Support Us</a></li>
+</ul></nav>
+			
+<nav class="action-menu">
+
+	<ul>
+		<li class="facebook"><a href="https://facebook.com/chalkbeat" class="icon" target="_blank" alt="Facebook">Facebook</a></li>
+		<li class="twitter"><a href="https://twitter.com/chalkbeat" class="icon" target="_blank" alt="Twitter">Twitter</a></li>
+		<li class="search-holder"><a href="https://www.chalkbeat.org/?s" class="icon" alt="Search">Search</a></li>
+
+		<!-- <li class="search-holder">
+			<button class="search-toggle icon">Search</button>
+
+			<form method="GET" action="https://www.chalkbeat.org/" class="search-form hidden">
+				<input type="text" class="search-input" name="s" id="s">
+				<input type="submit" class="search-button" value="Search Chalkbeat">
+			</form>
+
+		</li> -->
+	</ul>
+
+</nav> <!-- /.action-menu -->
+
+		</div>	<!-- /.main-footer-container -->
+
+		<div class="locations-nav-container">
+
+			<div class="container">
+
+				<h3 class="section-title">More From:</h3>
+
+				<nav class="locations-menu"><ul id="menu-locations" class="menu"><li id="nav-menu-item-76888" class="co menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/co/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 1 | Colorado&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 1 | Colorado&#39;);">Colorado</a></li>
+<li id="nav-menu-item-111526" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/detroit/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 2 | Detroit&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 2 | Detroit&#39;);">Detroit</a></li>
+<li id="nav-menu-item-76887" class="in menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/in/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 3 | Indiana&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 3 | Indiana&#39;);">Indiana</a></li>
+<li id="nav-menu-item-76847" class="ny menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/ny/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 4 | New York&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 4 | New York&#39;);">New York</a></li>
+<li id="nav-menu-item-76886" class="tn menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.chalkbeat.org/tn/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 5 | Tennessee&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 5 | Tennessee&#39;);">Tennessee</a></li>
+<li id="nav-menu-item-76891" class="national menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-76841 current_page_item"><a href="https://www.chalkbeat.org/" class="menu-link main-menu-link" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 6 | National&#39;); ga(&#39;chalkbeatRollup.send&#39;, &#39;event&#39;, &#39;Navigation&#39;, &#39;click&#39;, &#39;Footer Locations Menu | 6 | National&#39;);">National</a></li>
+</ul></nav>
+			</div> <!-- /.container -->
+
+		</div> <!-- /.locations-nav-container -->
+
+	</footer>
+
+</div> <!-- /#wrapper -->
+
+
+  <!-- Pardot Tracking -->
+  <script type="text/javascript">
+  piAId = '343281';
+  piCId = '1197';
+
+  (function() {
+      function async_load(){
+          var s = document.createElement('script'); s.type = 'text/javascript';
+          s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+          var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+      }
+      if(window.attachEvent) { window.attachEvent('onload', async_load); }
+      else { window.addEventListener('load', async_load, false); }
+  })();
+  </script>
+
+
+		<script type="text/javascript">
+
+			jQuery( document ).ready( function( $ ){
+
+				function get_cookie( cookieName ) {
+					var name = cookieName + '=';
+					var ca = document.cookie.split(';');
+					for(var i=0; i<ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0)==' ') c = c.substring(1);
+						if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+					}
+					return false;
+				}
+
+				var cookieName = 'visitedFront';
+
+				var visitedHome = get_cookie( cookieName );
+
+				if ( !visitedHome ) {
+
+					$( '.rise-and-shine-bg' ).removeClass( 'minimized' );
+					document.cookie = cookieName + '=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+
+				}
+
+			} );
+
+		</script>
+
+	<link rel="stylesheet" id="slickquiz_css-css" href="./Chalkbeat_ Education News for America_files/slickQuiz.css" type="text/css" media="all">
+<link rel="stylesheet" id="slickquiz_front_css-css" href="./Chalkbeat_ Education News for America_files/front.css" type="text/css" media="all">
+<script type="text/javascript" src="./Chalkbeat_ Education News for America_files/slickQuiz.js.download"></script>
+<script type="text/javascript" src="./Chalkbeat_ Education News for America_files/widgets.js.download"></script>
+<script type="text/javascript" src="./Chalkbeat_ Education News for America_files/main.min.js.download"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ee02659fe9","applicationID":"33952119","transactionName":"MVUBYkIAXEpUWkdZXQgfIlVECF1XGk1WXUIKURdTHQdAVltNQA==","queueTime":0,"applicationTime":637,"atts":"HRICFAoaT0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Chalkbeat_ Education News for America_files/1e2RywyANNe.html" style="border: none;" kwframeid="4"></iframe></div></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Chalkbeat_ Education News for America_files/widget_iframe.7a5ca036ea5299f1d2ebb2234731e35e.html" title="Twitter settings iframe" style="display: none;" kwframeid="5"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" kwframeid="6" src="./Chalkbeat_ Education News for America_files/saved_resource(3).html"></iframe><iframe id="google_osd_static_frame_8715971800787" name="google_osd_static_frame" kwframeid="7" style="display: none; width: 0px; height: 0px;" src="./Chalkbeat_ Education News for America_files/saved_resource(4).html"></iframe></body></html>

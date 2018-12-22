@@ -1,0 +1,49 @@
+/* /^www\.stonyfield\.com\/organic\/news\/?$/ */
+#pg-12903-1 {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/organic\/cooking-baking\/?$/ */
+#pg-12368-2 {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/organic\/baby-kids\/?$/ */
+#pg-11995-2 {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/organic\/environment\/?$/ */
+#pg-12931-2 {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/organic\/farming\/?$/ */
+#pg-12950-2 {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/organic\/healthy\/?$/ */
+#pg-12647-2 {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/blog\/.+$/ */
+body.single-post #main .onespot-section {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/recipes\/.+$/ */
+body.single-recipe #main .onespot-section {
+    display: none;
+}
+
+/* /^www\.stonyfield\.com\/recipes\/topic\/.+$/ */
+body.archive #main .onespot-section {
+    display: none;
+}
+
+/*/^www\.stonyfield\.com\/?$/*/
+#pg-10482-1 {
+    display: none;
+}

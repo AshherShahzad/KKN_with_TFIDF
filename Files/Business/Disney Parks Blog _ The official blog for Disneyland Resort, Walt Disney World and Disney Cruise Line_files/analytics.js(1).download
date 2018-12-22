@@ -1,0 +1,53 @@
+
+/* global dpbVars, WDPRO */
+(function(framework, tms, $) {
+  var analyticsModel, key, val, _ref;
+  analyticsModel = {
+    configuration: {
+      SiteCatalyst: dpbVars.analytics.siteCatalyst,
+      TestAndTarget: {
+        globalMbox: dpbVars.analytics.globalMbox,
+        dynamicMboxes: dpbVars.analytics.dynamicMboxes
+      },
+      contentLanguage: 'en',
+      contentLocale: 'us'
+    },
+    site: 'DP',
+    pageId: dpbVars.analytics.pageId,
+    siteSection: dpbVars.analytics.siteSection,
+    article: dpbVars.analytics.article
+  };
+  if (dpbVars.analytics.search != null) {
+    _ref = dpbVars.analytics.search;
+    for (key in _ref) {
+      val = _ref[key];
+      analyticsModel[key] = val;
+    }
+  }
+  if (framework) {
+    framework.update(analyticsModel);
+    $('body.search-results .posts-list').on('dpb:loadedPage', (function(_this) {
+      return function(e, data) {
+        var post, updatedModel;
+        updatedModel = {
+          trackingType: 'page',
+          pageId: data.page.toString(),
+          pageVariant: (function() {
+            var _i, _len, _ref1, _results;
+            _ref1 = data.posts;
+            _results = [];
+            for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+              post = _ref1[_i];
+              _results.push(post.ID.toString());
+            }
+            return _results;
+          })()
+        };
+        framework.trackElement('searchResults', updatedModel);
+      };
+    })(this));
+  }
+  if (tms) {
+    tms.pageBottom();
+  }
+})(window.WDPRO && WDPRO.Analytics && WDPRO.Analytics.Framework, window._satellite, jQuery);

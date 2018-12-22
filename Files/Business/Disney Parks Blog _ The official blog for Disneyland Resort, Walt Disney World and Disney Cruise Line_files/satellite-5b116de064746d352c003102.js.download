@@ -1,0 +1,32 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  var _script = document.createElement("script");
+_script.src = '//www.googletagmanager.com/gtag/js?id=UA-99867646-1';
+document.head.appendChild(_script);
+
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+
+gtag('js', new Date());
+gtag('config', 'DC-2789293');
+
+var configData = {
+    send_page_view: false,
+    custom_map: {dimension1: 'site'}
+};
+var cmp = _satellite.getQueryParam('CMP');
+if (cmp) {
+    configData.campaign = {
+        medium: cmp.split('-')[0],
+        source: document.referrer.split('/')[2] || 'unknown',
+        name: cmp
+    };
+}
+
+gtag('config', 'UA-99867646-1', configData);
+gtag('event', 'page_view', {
+    site: _satellite.getVar('lob'),
+    page_title: document.title,
+    page_location: location.href,
+    page_path: location.pathname + location.search
+});
+});

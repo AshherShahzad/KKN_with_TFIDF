@@ -1,0 +1,66 @@
+function load_with_ajax(class_name, js_effect, from_page, content_selector, trigger) {
+    jQuery("." + class_name + " .l-modal-content").load(from_page + " " + content_selector, function () {
+        jQuery(trigger).click(function (event) {
+            //not to go for the link location
+            event.preventDefault();
+            show_simple_popup(class_name, js_effect);
+        });
+    });
+}
+
+/**
+ *	FUNCTIONS TO SHOW THE POPUP, EFFECTS LOGIC:
+ */
+function show_simple_popup(class_name, js_effect) {
+    switch (js_effect) {
+        case 1:
+            jQuery(".l-modal-wrapper." + class_name).fadeIn("slow");
+            break;
+        case 2:
+            jQuery(".l-modal-wrapper." + class_name).fadeIn("slow");
+            jQuery(".l-modal-wrapper." + class_name + " .l-modal").css({top: "-110%"});
+            jQuery(".l-modal-wrapper." + class_name + " .l-modal").animate({
+                top: "10%",
+            }, 500, "linear");
+            break;
+        default:
+//            jQuery(".l-modal-wrapper." + class_name).show();
+            jQuery(".l-modal-wrapper." + class_name).addClass('show').css('display','');
+
+    }
+    calculate_popup_position();
+
+    jQuery(window).resize(function () {
+        calculate_popup_position();
+    });
+
+}
+
+function hide_simple_popup(class_name, js_effect) {
+    switch (js_effect) {
+        case 1:
+            jQuery(".l-modal-wrapper." + class_name).fadeOut("slow");
+            break;
+        case 2:
+            jQuery(".l-modal-wrapper." + class_name).fadeOut("slow");
+            jQuery(".l-modal-wrapper." + class_name + " .l-modal").animate({
+                top: "-110%",
+            }, 500, "linear");
+
+            break;
+        default:
+            jQuery(".l-modal-wrapper." + class_name).hide();
+    }
+}
+
+function calculate_popup_position(class_name) {
+    /*
+     //Center each popup that we have individually
+     jQuery(".l-modal-wrapper .l-modal").each(function(){
+     var window_width = jQuery(window).width();
+     var popup_width = jQuery(this).width();
+     var popup_left = (window_width-popup_width)/2;
+     jQuery(this).css({left:popup_left});			
+     });	
+     */
+}

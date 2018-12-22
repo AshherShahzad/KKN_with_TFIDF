@@ -1,0 +1,46 @@
+
+  (function(s_wdpro) {
+    if (!_satellite.readCookie('bkSent')) {
+        var pixel = encodeURIComponent('https://sw88.go.com/b/ss/' + getReportSuite() + '/1/' + getVersion() + '/s' + genRandomNumber() + '?' + getParameters());
+
+        var bkPixelUrl = 'https://tags.bluekai.com/site/30197?redir=' + pixel;
+        var bkPixel = new Image(0,0);
+        bkPixel.src = bkPixelUrl;
+        _satellite.setCookie('bkSent','true');
+        function genRandomNumber() {
+            return Math.random() * 100;
+        }
+
+        function getReportSuite() {
+            return window.s_account;
+        }
+
+        function getVersion() {
+            return s_wdpro.version;
+        }
+
+        function getParameters() {
+            var params = [];
+            var linkId = 'BlueKaiID';
+            params.push('pageName=' + s_wdpro.pageName);
+            params.push('c1=' + s_wdpro.prop1);
+            params.push('v10=' + encodeURIComponent(s_wdpro.eVar10));
+            if (s_wdpro.prop52) {
+              params.push('c52=' + s_wdpro.prop52);
+            }
+            params.push('c9=' + linkId);
+            params.push('g=' + window.location.href);
+            params.push('pe=lnk_o');
+            params.push('pev2=' + linkId);
+            params.push('c2=D' + encodeURIComponent('=') + 'SWID');
+            if (s_wdpro.fid) {
+                params.push('fid=' + s_wdpro.fid);
+            }
+            if (window.visitor) {
+                params.push('mid=' + visitor.getMarketingCloudVisitorID())
+            }
+            params.push('c59=$_BK_UUID');
+            return params.join('&');
+        }
+    }
+  }(window.s_wdpro));

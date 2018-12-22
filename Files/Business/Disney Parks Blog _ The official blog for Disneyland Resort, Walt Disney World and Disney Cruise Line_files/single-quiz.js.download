@@ -1,0 +1,182 @@
+(function($, window, document) {
+  var WPQuiz;
+  WPQuiz = (function() {
+    function WPQuiz(element) {
+      this.element = element;
+      this.$element = $(this.element);
+      this.init();
+    }
+
+    WPQuiz.prototype.init = function() {
+      this.id = this.$element.data('quiz-id');
+      this.levels = this.$element.data('quiz-levels');
+      this.corrects = this.$element.data('quiz-answers');
+      if ((this.corrects != null) && this.corrects) {
+        this.completed = 0;
+        this.correctCount = 0;
+        this.correctQuestions = [];
+        return this.loopQuestions();
+      }
+    };
+
+    WPQuiz.prototype.loopQuestions = function() {
+      var _this;
+      _this = this;
+      this.$questions = this.$element.find('.quiz-question');
+      return this.$questions.each(function(i, el) {
+        return _this.loopAnswers(this, i + 1);
+      });
+    };
+
+    WPQuiz.prototype.loopAnswers = function(question, qi) {
+      var $answers, _this;
+      _this = this;
+      $answers = $(question).find('input');
+      return $answers.each(function(i, el) {
+        return $(this).on('change', function(e) {
+          return _this.answerResult($answers, i, qi);
+        });
+      });
+    };
+
+    WPQuiz.prototype.answerResult = function($answers, ai, qi) {
+      var $answer, $correct, correctIndex;
+      correctIndex = this.corrects[qi] - 1;
+      $answer = $answers.eq(ai).parents('.quiz-question-answer');
+      $correct = $answers.eq(correctIndex).parents('.quiz-question-answer');
+      this.completed++;
+      $answers.prop('disabled', true);
+      $answer.addClass('selected');
+      $correct.addClass('correct');
+      if (ai !== correctIndex) {
+        $answer.addClass('incorrect');
+      } else {
+        this.correctCount++;
+        this.correctQuestions.push(qi);
+      }
+      if (this.completed === this.$questions.length) {
+        return this.quizComplete();
+      }
+    };
+
+    WPQuiz.prototype.quizComplete = function() {
+      var image, level, output, score, title;
+      score = this.correctCount / this.completed;
+      level = this.getLevel(score);
+      title = image = '';
+      if ((this.levels != null) && this.levels) {
+        title = this.levels[level].title;
+        image = this.levels[level].image;
+      }
+      output = this.getResultOutput(image, title);
+      this.showResults(output, (function(_this) {
+        return function() {
+          return _this.showEmbed(function() {
+            return window.parent.postMessage('sizing:' + _this.id + ':' + document.body.scrollHeight + ',' + document.body.scrollWidth, '*');
+          });
+        };
+      })(this));
+      return this.submitResults(score);
+    };
+
+    WPQuiz.prototype.getResultOutput = function(image, title) {
+      var output;
+      output = '';
+      if ((image != null) && image) {
+        output += '<div class="quiz-result-image">' + image + '</div>';
+      }
+      output += '<h1>You answered ' + this.correctCount + ' out of ' + this.completed + ' correctly!</h1>';
+      if ((title != null) && title) {
+        output += '<p>Your score awarded you the "' + title + '" ranking.</p>';
+      }
+      return output;
+    };
+
+    WPQuiz.prototype.getLevel = function(score) {
+      var level;
+      return level = (function() {
+        switch (false) {
+          case !(score < .25):
+            return 4;
+          case !(score < .50):
+            return 3;
+          case !(score < .75):
+            return 2;
+          default:
+            return 1;
+        }
+      })();
+    };
+
+    WPQuiz.prototype.showResults = function(content, callback) {
+      this.$element.find('.quiz-results').parent().removeClass('hidden');
+      this.$element.find('.quiz-result').prepend(content);
+      if (typeof callback === 'function') {
+        callback.call();
+      }
+      return this.$element.find('.social-icons li a').click(function(e) {
+        e.preventDefault();
+        return window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+      });
+    };
+
+    WPQuiz.prototype.showEmbed = function(callback) {
+      var $code, $codeText, $embed;
+      $embed = this.$element.find('.quiz-embed');
+      $code = this.$element.find('.quiz-embed-code');
+      $codeText = $embed.find('.quiz-embed-code textarea');
+      $code.hide();
+      $embed.on('click', '.button', function() {
+        return $code.toggle(200, function() {
+          if (typeof callback === 'function') {
+            return callback.call();
+          }
+        });
+      });
+      $embed.parent().removeClass('hidden');
+      if (typeof callback === 'function') {
+        callback.call();
+      }
+      return $codeText.click(function() {
+        this.focus();
+        return this.select();
+      });
+    };
+
+    WPQuiz.prototype.submitResults = function(score) {
+      var data, id;
+      id = this.$element.data('quiz-id');
+      if ((id != null) && id) {
+        data = {
+          action: 'save_quiz_results',
+          quiz_id: id,
+          score: Math.round(score * 100),
+          correct: this.correctQuestions,
+          _ajax_nonce: quizData.ajaxNonce
+        };
+        return $.ajax({
+          type: 'POST',
+          url: quizData.ajaxurl,
+          data: data
+        });
+      }
+    };
+
+    return WPQuiz;
+
+  })();
+  return $(document).ready(function($) {
+    $('.quiz-container').each(function(i, el) {
+      new WPQuiz(this);
+      return window.parent.postMessage('quizLoaded:' + $(el).data('quiz-id'), '*');
+    });
+    return window.addEventListener('message', function(e) {
+      var data, quizID;
+      data = e.data.split(':');
+      quizID = data[1];
+      if (data[0] === 'sizing') {
+        return e.source.postMessage('sizing:' + quizID + ':' + document.body.scrollHeight + ',' + document.body.scrollWidth, e.origin);
+      }
+    }, false);
+  }, false);
+})(jQuery, window, document);

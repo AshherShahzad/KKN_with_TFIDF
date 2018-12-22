@@ -1,0 +1,27 @@
+function piResponse() {
+piSetCookie('visitor_id342281', '60551911', 3650);
+piSetCookie('visitor_id342281-hash', '973084fcaa3b4032947556837a87c3be1b34cedc3459042d04a73ff08be3c3e0bf92eeb0b0cb81e74bd98c688b3ef171183a4e9a', 3650);
+
+if (document.location.protocol != "https:" || (document.location.protocol == "https:" && false)) {
+var analytics_link = document.location.protocol + "//" + "go.chalkbeat.org/analytics?";
+pi.tracker.visitor_id='60551911';
+
+pi.tracker.visitor_id_sign='973084fcaa3b4032947556837a87c3be1b34cedc3459042d04a73ff08be3c3e0bf92eeb0b0cb81e74bd98c688b3ef171183a4e9a';
+
+var variables = 'conly=true';
+for (property in pi.tracker) {
+	variables += "&"+property+"="+pi.tracker[property];
+}
+var headID = document.getElementsByTagName("head")[0];
+piScriptObj[piScriptNum] = document.createElement('script');
+piScriptObj[piScriptNum].type = 'text/javascript';
+piScriptObj[piScriptNum].src = analytics_link + variables;
+headID.appendChild(piScriptObj[piScriptNum]);
+piScriptObj[piScriptNum].onload = function() { return; }
+}
+}
+piResponse();
+
+
+
+

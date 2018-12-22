@@ -1,0 +1,17 @@
+(
+    function(d){
+        d.write('<span id="mag7815620"><img src="https://idsync.rlcdn.com/382159.gif?partner_uid=a52ba9dea02444478da89de8db714f54" width="1" height="1" style="display:none;"><img src="https://ce.lijit.com/merge?pid=5286&amp;3pid=a52ba9dea02444478da89de8db714f54" width="1" height="1" style="display:none;"><img src="https://ml314.com/utsync.ashx?eid=50117&amp;et=0&amp;fp=a52ba9dea02444478da89de8db714f54" width="1" height="1" style="display:none;"><img src="https://ads.p.veruta.com/adserver/cookiematch?pnid=4000000" width="1" height="1" style="display:none;"><img src="https://api.viglink.com/api/sync/mgt/match?uid=a52ba9dea02444478da89de8db714f54" width="1" height="1" style="display:none;"></span>');
+        if (d.getElementById('mag7815620')) {
+            return;
+        }
+        var b=d.body||d.head;
+        var i=function(u){var x=d.createElement('img');x.width=1;x.height=1;x.src=u;x.style.display='none';b.appendChild(x);};
+        var s=function(u){var x=d.createElement('script');x.src=u;x.type='text/javascript';x.async=true;b.appendChild(x);};
+        i("https://idsync.rlcdn.com/382159.gif?partner_uid=a52ba9dea02444478da89de8db714f54");
+i("https://ce.lijit.com/merge?pid=5286&3pid=a52ba9dea02444478da89de8db714f54");
+i("https://ml314.com/utsync.ashx?eid=50117&et=0&fp=a52ba9dea02444478da89de8db714f54");
+i("https://ads.p.veruta.com/adserver/cookiematch?pnid=4000000");
+i("https://api.viglink.com/api/sync/mgt/match?uid=a52ba9dea02444478da89de8db714f54");
+        ;
+    }
+)(document);

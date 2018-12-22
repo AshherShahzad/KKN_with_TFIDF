@@ -1,0 +1,12 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  window.WDPRO = window.WDPRO || {};
+WDPRO.Analytics = WDPRO.Analytics || {};
+WDPRO.Analytics.additionalModelData = WDPRO.Analytics.additionalModelData || [];
+WDPRO.Analytics.additionalModelData.push({
+  configuration: {
+  	Adometry: {
+			turnOff: "true"
+    }
+  }
+});
+});
